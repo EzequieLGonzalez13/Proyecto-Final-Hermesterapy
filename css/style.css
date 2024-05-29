@@ -19,6 +19,7 @@ body {
 
 .hermes-main {
   padding-top: 20px;
+  text-shadow: 5px 6px rgba(37, 34, 34, 0.219);
   font-size: 200%;
 }
 
@@ -87,6 +88,7 @@ header img {
 }
 
 .main-class p {
+  text-shadow: 5px 4px rgba(37, 34, 34, 0.219);
   font-family: "Sevillana", cursive;
   font-size: 50px;
   color: #eae6ca;
@@ -568,7 +570,7 @@ legend {
 .container-sub {
   width: 100%;
   height: 400px;
-  background: url("/image/terapia-uno.jpg");
+  background: url("/image/terapia-dos.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
