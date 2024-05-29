@@ -1,0 +1,270 @@
+@import "../variables/variables";
+
+
+.nosotros-header{
+    
+    position: sticky;
+    top: 0;
+    background-color:$color-header;
+
+}
+
+
+.section-nosotros div {
+    
+    margin: auto;
+   background-color: #2c234b15;
+   justify-content: center;
+   box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+
+}
+
+.section-nosotros {
+    margin-left: 15%;
+    
+    margin-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+    
+    
+    line-height: 65px;
+    text-align: center;
+    color: #8b8a8a;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+
+}
+
+legend {
+    text-align: center;
+}
+
+.nosotros-h1 {
+    font-family: "Sevillana", cursive;
+    padding-top: 60px;
+    text-align: center;
+    color: #8b8a8a;
+    border-top: 10px solid grey;
+}
+
+
+
+.section-nosotros-dos {
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/*Formulario*/
+.container-sub{
+    
+    width: 100%;
+    height: 400px;
+    background: url("/image/terapia-tres.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-sub{
+    
+    width: 100%;
+    height: 100%;
+    background: rgba(0,22,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+    }
+
+    p{color: #fff;
+        font-size: 17px;
+        margin-bottom: 25px;
+        max-width: 500px;
+        text-align: center;
+
+    }
+
+    form {
+        width: 100%;
+        max-width: 440px;
+        display: flex;
+
+    }
+}
+
+
+.content-sub form .campo{
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px 0px 0px 10px;
+    outline: 0px;
+}
+.content-sub form .btn-sub{
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px 10px 10px 3px;
+    background: #2f8668;
+    color: #fff;
+    cursor: pointer;
+    outline: 0px;
+}
+.content-sub form .btn-sub:hover{
+    background: #3eba8f;
+}
+
+/*Section*/
+
+.section-uno-d{
+    margin-left:80px;
+    margin-right: 0px;
+
+    img {
+        display: none;
+        height: 400px;
+        width: 450px;
+        object-fit: cover;
+    }
+
+    
+    flex-basis: $flex-basisnosotros;
+ 
+}
+
+
+.section-dos-d {
+    
+    margin-right: 0px;
+    margin-left: 80px;
+    display: none;
+    img {
+     
+        height: 400px;
+        width: 10px;
+        object-fit: cover;
+        
+    }
+    
+    flex-basis: $flex-basisnosotros;
+    
+
+}
+
+
+.section-tres-d {
+    
+    margin-left: 0px;
+    margin-right: 5px;
+img {
+    display: none;
+    height: 400px;
+    width: 450px;
+    object-fit: cover;
+}
+
+    
+    flex-basis: $flex-basisnosotros;
+   
+
+}
+
+
+.main-class p {
+   
+    font-size: 20px;
+    color: #eae6ca;
+    position: absolute;
+    padding-top: 1500px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-50%,-50%);
+    line-height: 40px;
+   
+}
+
+
+/*Flotante*/
+
+#btn-mas {
+    display: none;
+}
+
+.container-check {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+.itemicon-uno {
+    
+    padding-bottom: 15px;
+    margin-right: 5px;
+}
+.itemicon-dos {
+    padding-bottom: 25px;
+    
+}
+
+.btn-mas {
+    height: 50px;
+    
+}
+
+
+.redes a , .icon-mas2 {
+    display: block;
+    text-decoration: none;
+    background: #312f99;
+    border-radius: 50px;
+    color: #faf8f8;
+    height: 40px;
+    width: 55px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+    
+}
+
+
+
+.redes a :hover {
+    background: #fff;
+    color: #788a47;
+}
+.redes a {
+    margin: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+footer .nosotros {
+    text-align: center;
+}
+
+

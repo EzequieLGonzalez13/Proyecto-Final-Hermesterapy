@@ -1,0 +1,412 @@
+/*Media Queri deskop*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 500px){
+
+//     .main-class p {
+
+//         line-height: 22px;
+//         margin-top: 10px;
+
+
+//     } }
+
+//     .hermes-main {
+//         padding-bottom: 40px;
+//     }
+
+//     .section-tres-d {
+//         margin-left: -3px;
+//         margin-right: -50px;
+//         margin:auto
+        
+//     img {
+        
+//         height: 400px;
+//         width:350px;
+//         object-fit: cover;
+//     }
+    
+        
+       
+       
+    
+//     }
+    
+
+
+
+    // .section-tres-d{
+    //     display: none;
+    //     margin-right: 0px;
+    
+    //     img {
+    //         height: 400px;
+    //         width: 50px;
+    //         object-fit: cover;
+            
+    //     }
+    
+        
+        
+     
+    // }}
+
+    // @media only screen and (max-width: 600px) {
+
+    //      .main-class p {
+   
+    //     font-size: 30px;
+    //     color: #e6e2cc;
+    //     position: absolute;
+    //     padding-top: 75px;
+    //     margin-top: 100px;
+    //     margin-right: 40px;
+        
+    //     top: 20%;
+    //     left: 30%;
+    //     right: 30%;
+    //     transform: translate(-68%,-49%);
+    //     line-height: 35px;
+        
+       
+    // }
+
+        
+
+
+
+    // }
+
+
+
+
+    @media only screen and (max-width: 768px){
+        .main-class p {
+   
+            font-size: 15px;
+            color:  #e6e2cc;
+            position: absolute;
+            padding-top: 70px;
+            margin-top: 50px;
+            margin-right: 40px;
+            top: 20%;
+            left: 30%;
+            right: 30%;
+            transform: translate(-60%,-50%);
+            line-height: 32px;
+            
+           
+        }
+
+        
+
+
+    }
+
+    // @media only screen and (max-width: 5000px){
+    //     .main-class p {
+   
+    //         font-size: 15px;
+    //         color:  #dfbd00;
+    //         position: absolute;
+    //         padding-top: 70px;
+    //         margin-top: 50px;
+    //         margin-right: 40px;
+    //         top: 20%;
+    //         left: 30%;
+    //         right: 30%;
+    //         transform: translate(-60%,-50%);
+    //         line-height: 20px;
+            
+           
+    //     }
+
+        
+
+
+    // }
+
+
+    @media only screen and (max-width: 600px) {
+
+
+        .main-class p {
+   
+            font-size: 30px;
+            color: #fdd90b;
+            position: absolute;
+            padding-top: 70px;
+            margin-top: 100px;
+            margin-right: 40px;
+            top: 20%;
+            left: 30%;
+            right: 30%;
+             transform: translate(-60%,-47%);
+            line-height: 60px;
+            
+           
+        }
+
+    }
+
+
+
+
+
+    @media only screen and (min-width: 600px) {
+
+        .main-class p {
+   
+            font-size: 30px;
+            color: #e6e2cc;
+            position: absolute;
+            padding-top: 70px;
+            margin-top: 100px;
+            margin-right: 40px;
+            top: 20%;
+            left: 30%;
+            right: 30%;
+            transform: translate(-60%,-47%);
+            line-height: 60px;
+            
+           
+        }
+
+        .container-uno h1 {
+            
+           text-align: center;
+         padding-top: 80px;
+          font-size: 20px;
+         
+          
+       }
+
+       .main-class {
+        height: 670px;}
+
+
+
+    }
+
+
+
+
+
+   
+
+
+
+
+    @media only screen and (min-width: 992px) {
+
+        .main-class p {
+   
+            font-size: 30px;
+            color: #e6e2cc;
+            position: absolute;
+            padding-top: 70px;
+            top: 20%;
+            left: 30%;
+            right: 30%;
+            transform: translate(-50%,-50%);
+            line-height: 60px;
+            
+           
+        }
+
+        .container-uno h1 {
+            
+           text-align: center;
+         padding-top: 80px;
+          font-size: 25px;
+       }
+
+       .main-class {
+        height: 670px;}
+
+
+    }
+
+    
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+    
+
+
+
+
+    .main-class p {
+   
+        font-size: 30px;
+        color: #e6e2cc;
+        position: absolute;
+        padding-top: 70px;
+        top: 20%;
+        left: 30%;
+        right: 30%;
+        transform: translate(-50%,-50%);
+        line-height: 60px;
+        
+       
+    }
+
+    .container-uno h1 {
+        color: rgb(104, 104, 104);
+       text-align: center;
+     padding-top: 80px;
+      font-size: 25px;
+   }
+     
+
+
+
+
+
+    
+    
+
+    .container-texto {
+        
+       
+        flex-direction: column;
+        
+        text-align: center;
+    }
+
+   
+
+    
+}
+
+/*Media Queri movil*/ 
+@media screen and (min-width: 768px) {
+
+
+    
+    
+
+    
+
+    .container-texto {
+        flex-direction: row;
+       
+        
+        
+        text-align: center;
+    }
+
+
+    
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .section-tres-d {
+    display: none;
+        margin-left: 0px;
+        margin-right: 5px;
+    img {
+        
+        height: 400px;
+        width: 450px;
+        
+    }
+    
+        
+        
+       
+    
+    }
+
+
+    .main-class p {
+   
+        font-size: 35px;
+        color: #e6e2cc;
+        position: absolute;
+        padding-top: 75px;
+        margin-top: 100px;
+        margin-right: 40px;
+        
+        top: 20%;
+        left: 30%;
+        right: 30%;
+        transform: translate(-68%,-56%);
+        line-height: 30px;
+        
+       
+    }
+
+
+    .hermes-main {
+         margin-bottom:25px;
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 600px)
+
+{
+
+    .main-class p {
+   
+        font-size: 20px;
+        
+        position: absolute;
+        padding-top: 75px;
+        margin-top: 100px;
+        margin-right: 40px;
+        
+        top: 20%;
+        left: 30%;
+        right: 30%;
+        transform: translate(-68%,-68%);
+        line-height: 20px;
+        
+       
+    }
+}
+
+
+
+
+
+// @media screen and (min-width: 768px) {
+
+//     .main-class p {
+//         padding-top: 300px;
+//     }  
+
+//     .main-class {
+//         height: 600px;
+//         position: relative;
+//         overflow: hidden;
+//         flex-wrap: wrap;
+        
+// }
+// }

@@ -1,0 +1,1004 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*estlios generales*/
+body {
+  margin: 0 10px;
+  background-color: rgba(252, 251, 248, 0.2823529412);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  color: #eae6ca;
+}
+
+.hermes-main {
+  padding-top: 20px;
+  font-size: 200%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3e4450;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+}
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/*estilos Main*/
+.main-class {
+  display: flex;
+}
+.main-class div img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.nav-link {
+  color: #eae6ca;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 30px;
+}
+
+.navbar-nav .nav-item :hover {
+  color: #3da7ee;
+}
+
+.Texto-main div {
+  color: #0ff061;
+}
+
+.main-class {
+  height: 670px;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.main-class span {
+  display: block;
+  text-align: center;
+}
+
+.main-class p {
+  font-family: "Sevillana", cursive;
+  font-size: 50px;
+  color: #eae6ca;
+  position: absolute;
+  padding-top: 70px;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  transform: translate -50%, -50%;
+  line-height: 20px;
+  transition: all 0.5s;
+}
+
+/*Estilos section*/
+.container-uno {
+  height: 200px;
+  width: 100%;
+  background-color: #eee9c6;
+  overflow: hidden;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+}
+.container-uno h1 {
+  color: rgb(104, 104, 104);
+  text-align: center;
+  padding-top: 0px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container-dos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+.container-dos img {
+  margin-top: 10px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imagen1 {
+  width: 260%;
+}
+
+.container-texto {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.container-texto p {
+  background-color: rgba(168, 168, 168, 0.0470588235);
+  font-size: 20px;
+  margin: auto;
+  color: #a8a8a8;
+}
+
+.container-textouno {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.container-textodos {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.container-textotres {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.por-que-nosotros {
+  font-size: 25px;
+  text-align: center;
+  height: 100px;
+  padding-top: 30px;
+  color: rgb(104, 104, 104);
+  background-color: #a8a8a8;
+}
+
+/*Estilos wpp flotante*/
+.float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+
+.fa-whatsapp {
+  padding-top: 5px;
+  padding-left: 4px;
+  font-size: 40px;
+}
+
+.float:hover {
+  background-color: #0ff061;
+}
+
+footer .index {
+  padding-left: 550px;
+  text-align: center;
+}
+
+/* Estilos Terapias*/
+.terapias-header {
+  position: sticky;
+  top: 0;
+  background-color: #3e4450;
+  width: 100%;
+}
+
+.main-terapia {
+  background-color: rgba(168, 168, 168, 0.937254902);
+  color: #eae6ca;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  margin-top: 30px;
+  border-radius: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+}
+
+.container-items {
+  display: flex;
+  border-top: 60px solid #292929;
+  padding-top: 0px;
+  gap: 5px;
+  border: 10px slategrey;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.container-items img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.item-uno {
+  flex-basis: 250px;
+  color: #f1eaea;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(24, 80, 209, 0.75), rgba(5, 7, 12, 0.75)), url("../image/terapia-2.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.btn {
+  display: block;
+  background-color: rgba(243, 222, 194, 0.452);
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.btn-dos {
+  display: block;
+  background-color: burlywood;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.btn-tres {
+  display: block;
+  background-color: burlywood;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.item-dos {
+  flex-basis: 250px;
+  color: #f1eaea;
+  display: block;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(5, 7, 12, 0.75)), url("../image/terapia-1.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.item-tres {
+  flex-basis: 250px;
+  color: #f1eaea;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(31, 96, 247, 0), rgba(0, 0, 0, 0.952)), url("../image/terapia-3.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.item-uno, .item-dos, .item-tres, h2 {
+  color: #f1eaea;
+  text-align: center;
+}
+
+.item-cuatro, .item-cinco, .item-seis {
+  color: #f1eaea;
+}
+
+.terapias-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer .terapias {
+  text-align: center;
+}
+
+/* container-items*/
+.item :hover {
+  box-shadow: 0 10px 20px black;
+}
+
+.info-product {
+  padding: 15px 30 px;
+}
+
+figure {
+  display: none;
+}
+
+.item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  transition: all 0.1s;
+}
+
+.item-uno img {
+  padding-top: 30px;
+  height: 150px;
+}
+
+.item-dos img {
+  padding-top: 30px;
+  height: 150px;
+  width: 300px;
+}
+
+.item-tres img {
+  padding-top: 30px;
+  height: 150px;
+}
+
+/*estilo hover*/
+.item-uno, .item-dos, .item-tres figure {
+  overflow: hidden;
+}
+
+.item-uno :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-dos :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-tres :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.info-product button {
+  background-color: rgb(231, 148, 248);
+}
+
+.info-product :hover .button-dos {
+  color: rgb(0, 29, 190);
+}
+
+.description {
+  color: rgb(212, 221, 221);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*Container section-dos */
+.container-items-dos {
+  display: flex;
+  border-top: 60px solid #292929;
+  padding-top: 50px;
+  gap: 10px;
+  border: 10px slategrey;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.container-items-dos img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*texto*/
+.price {
+  flex-grow: 3;
+}
+
+/*Tamaño de productos*/
+.item-cuatro {
+  flex-basis: 250px;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(163, 189, 250, 0.253), rgba(82, 64, 105, 0.815)), url("../image/terapia-6.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.item-cuatro img {
+  padding-top: 30px;
+  height: 150px;
+}
+
+.item-cinco {
+  flex-basis: 250px;
+  display: block;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(163, 189, 250, 0.26), rgb(105, 104, 64)), url("../image/terapia-7.jpg");
+  background-repeat: repeat;
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.item-cinco img {
+  padding-top: 30px;
+  height: 150px;
+  width: 300px;
+}
+
+.item-seis {
+  flex-basis: 250px;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(77, 80, 83, 0.247), rgb(83, 102, 97)), url("../image/terapia-9.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.item-seis img {
+  padding-top: 30px;
+  height: 150px;
+}
+
+.item-siete {
+  flex-basis: 250px;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(163, 189, 250, 0.082), rgb(64, 105, 95)), url("../image/terapia-10.jpg");
+  flex-grow: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  color: #eae6ca;
+  text-align: center;
+}
+.item-siete img {
+  padding-top: 30px;
+  height: 150px;
+}
+
+.item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  transition: all 0.1s;
+}
+
+.item-cuatro, .item-cinco, .item-seis, h2 {
+  text-align: center;
+}
+
+.item-siete h2 {
+  text-align: center;
+}
+
+/*estilo hover*/
+.item-cuatro, .item-cinco, .item-seis, .item-siete figure {
+  overflow: hidden;
+}
+
+.item-cuatro :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-cinco :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-seis :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-siete :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.info-product button {
+  background-color: rgb(231, 148, 248);
+}
+
+.info-product :hover .button-dos {
+  color: rgb(43, 70, 226);
+}
+
+/* Estilos nosotros*/
+.nosotros-header {
+  position: sticky;
+  top: 0;
+  background-color: #3e4450;
+}
+
+.section-nosotros div {
+  margin: auto;
+  background-color: rgba(44, 35, 75, 0.0823529412);
+  justify-content: center;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+}
+
+.section-nosotros {
+  margin-left: 15%;
+  margin-top: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  justify-content: center;
+  line-height: 65px;
+  text-align: center;
+  color: #8b8a8a;
+  width: 70%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+legend {
+  text-align: center;
+}
+
+.nosotros-h1 {
+  font-family: "Sevillana", cursive;
+  padding-top: 60px;
+  text-align: center;
+  color: #8b8a8a;
+  border-top: 10px solid grey;
+}
+
+.section-nosotros-dos {
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+/*Formulario*/
+.container-sub {
+  width: 100%;
+  height: 400px;
+  background: url("/image/terapia-tres.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-sub {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 22, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-sub h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.content-sub p {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  text-align: center;
+}
+.content-sub form {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+}
+
+.content-sub form .campo {
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px 0px 0px 10px;
+  outline: 0px;
+}
+
+.content-sub form .btn-sub {
+  padding: 15px 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px 10px 10px 3px;
+  background: #2f8668;
+  color: #fff;
+  cursor: pointer;
+  outline: 0px;
+}
+
+.content-sub form .btn-sub:hover {
+  background: #3eba8f;
+}
+
+/*Section*/
+.section-uno-d {
+  margin-left: 80px;
+  margin-right: 0px;
+  flex-basis: 100px;
+}
+.section-uno-d img {
+  display: none;
+  height: 400px;
+  width: 450px;
+  object-fit: cover;
+}
+
+.section-dos-d {
+  margin-right: 0px;
+  margin-left: 80px;
+  display: none;
+  flex-basis: 100px;
+}
+.section-dos-d img {
+  height: 400px;
+  width: 10px;
+  object-fit: cover;
+}
+
+.section-tres-d {
+  margin-left: 0px;
+  margin-right: 5px;
+  flex-basis: 100px;
+}
+.section-tres-d img {
+  display: none;
+  height: 400px;
+  width: 450px;
+  object-fit: cover;
+}
+
+.main-class p {
+  font-size: 20px;
+  color: #eae6ca;
+  position: absolute;
+  padding-top: 1500px;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+
+/*Flotante*/
+#btn-mas {
+  display: none;
+}
+
+.container-check {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+
+.itemicon-uno {
+  padding-bottom: 15px;
+  margin-right: 5px;
+}
+
+.itemicon-dos {
+  padding-bottom: 25px;
+}
+
+.btn-mas {
+  height: 50px;
+}
+
+.redes a, .icon-mas2 {
+  display: block;
+  text-decoration: none;
+  background: #312f99;
+  border-radius: 50px;
+  color: #faf8f8;
+  height: 40px;
+  width: 55px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+}
+
+.redes a :hover {
+  background: #fff;
+  color: #788a47;
+}
+
+.redes a {
+  margin: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+footer .nosotros {
+  text-align: center;
+}
+
+/* Estilos recomendaciones*/
+.recomendaciones-header {
+  position: sticky;
+  top: 0;
+  background-color: #3e4450;
+}
+
+.main-recomenda {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 25%);
+}
+
+.reco-dos {
+  grid-row: 1/5;
+}
+
+.reco-uno {
+  grid-row: 1/5;
+}
+
+.reco-tres {
+  grid-row: 1/5;
+}
+
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-recomendaciones {
+  line-height: 30px;
+  text-align: center;
+  color: #8b8a8a;
+}
+
+footer .recomendaciones {
+  text-align: center;
+}
+
+footer .recomendaciones {
+  text-align: center;
+}
+
+/*Media Queri deskop*/
+@media only screen and (max-width: 768px) {
+  .main-class p {
+    font-size: 15px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -50%);
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-class p {
+    font-size: 30px;
+    color: #fdd90b;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 100px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -47%);
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .main-class p {
+    font-size: 30px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 100px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -47%);
+    line-height: 60px;
+  }
+  .container-uno h1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+  }
+  .main-class {
+    height: 670px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-class p {
+    font-size: 30px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    line-height: 60px;
+  }
+  .container-uno h1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 25px;
+  }
+  .main-class {
+    height: 670px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-class p {
+    font-size: 30px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    line-height: 60px;
+  }
+  .container-uno h1 {
+    color: rgb(104, 104, 104);
+    text-align: center;
+    padding-top: 80px;
+    font-size: 25px;
+  }
+  .container-texto {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*Media Queri movil*/
+@media screen and (min-width: 768px) {
+  .container-texto {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-tres-d {
+    display: none;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  .section-tres-d img {
+    height: 400px;
+    width: 450px;
+  }
+  .main-class p {
+    font-size: 35px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 75px;
+    margin-top: 100px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-68%, -56%);
+    line-height: 30px;
+  }
+  .hermes-main {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-class p {
+    font-size: 20px;
+    position: absolute;
+    padding-top: 75px;
+    margin-top: 100px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-68%, -68%);
+    line-height: 20px;
+  }
+}
+/* Estilos recomendaciones*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 80px 0;
+  flex-basis: 3000px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+  margin-right: 0px;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: beige;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid cadetblue;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(225, 225, 236);
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: rgb(236, 135, 3);
+  padding-left: 6px;
+}
+
+.footer-links :hover h4 {
+  color: rgb(236, 135, 3);
+  padding-left: 6px;
+}
+
+.social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  border-radius: 40%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  padding-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

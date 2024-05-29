@@ -1,0 +1,58 @@
+@import "../variables/variables";
+
+.recomendaciones-header {
+    
+    position: sticky;
+    top: 0;
+    background-color:$color-header;
+}
+
+.main-recomenda {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows:repeat(8, 25% ) ;
+}
+
+
+.reco-dos {
+    grid-row: 1/5;
+}
+.reco-uno {
+    grid-row: 1/5;
+}
+.reco-tres{
+    grid-row: 1/5;
+}
+
+
+
+main {
+     div {
+         img{
+            width: 100%;
+        height: 100%;
+        object-fit: cover;
+         }
+     }
+ }
+
+
+
+
+
+
+
+.section-recomendaciones{
+    line-height: 30px;
+    text-align: center;
+    color: #8b8a8a;
+    
+}
+
+footer .recomendaciones {
+    text-align: center;
+}
+footer .recomendaciones {
+    text-align: center;
+}
