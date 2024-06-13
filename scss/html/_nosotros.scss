@@ -63,7 +63,15 @@ legend {
     padding-top: 30px;
     height: 100%;
     flex-wrap: wrap;
+
+    iframe {
+        margin-bottom: 20px;
+    }
+    
 }
+
+
+
 
 /*Formulario*/
 .container-sub{
@@ -130,60 +138,6 @@ legend {
     background: #3eba8f;
 }
 
-/*Section*/
-
-.section-uno-d{
-    margin-left:80px;
-    margin-right: 0px;
-
-    img {
-        display: none;
-        height: 400px;
-        width: 450px;
-        object-fit: cover;
-    }
-
-    
-    flex-basis: $flex-basisnosotros;
- 
-}
-
-
-.section-dos-d {
-    
-    margin-right: 0px;
-    margin-left: 80px;
-    display: none;
-    img {
-     
-        height: 400px;
-        width: 10px;
-        object-fit: cover;
-        
-    }
-    
-    flex-basis: $flex-basisnosotros;
-    
-
-}
-
-
-.section-tres-d {
-    
-    margin-left: 0px;
-    margin-right: 5px;
-img {
-    display: none;
-    height: 400px;
-    width: 450px;
-    object-fit: cover;
-}
-
-    
-    flex-basis: $flex-basisnosotros;
-   
-
-}
 
 
 .main-class p {
@@ -232,7 +186,7 @@ img {
 .redes a , .icon-mas2 {
     display: block;
     text-decoration: none;
-    background: #312f99;
+    background: #222555;
     border-radius: 50px;
     color: #faf8f8;
     height: 40px;

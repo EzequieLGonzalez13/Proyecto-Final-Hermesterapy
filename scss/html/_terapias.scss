@@ -16,7 +16,7 @@
     background-color: #a8a8a8ef;
     color: #eae6ca;
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
     padding-top: 0px;
     margin-top: 30px;
     border-radius: 15px;
@@ -41,16 +41,24 @@
     
 }
 
-.item-uno { flex-basis: 250px;
+.item-uno , .item-dos, .item-tres , .item-cuatro , .item-cinco , .item-seis { 
+    flex-basis: 300px;
     color: $color-terapia;
-    
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(24, 80, 209, 0.75), rgba(5,7,12, 0.75)) , url("../image/terapia-2.jpg");
    
-    
    @include terapias;
 
+   img{
+    height: 250px;
+    width: 100%;
+   }
+
 }
+
+
+
+
+
+
 
 .description {
     display: flex;
@@ -60,52 +68,25 @@
 
 .btn{
     display: block;
-    background-color: rgba(243, 222, 194, 0.452);
+    background-color: rgba(121, 113, 105, 0.452);
     text-align: center;
     margin-top: 5px;
-    border-radius: 50%;
+
+
+    
+    
 }
 
-.btn-dos {
+.btn-dos, .btn-tres {
     display: block;
     background-color: burlywood;
     text-align: center;
     margin-top: 5px;
 }
 
-.btn-tres {
-    display: block;
-    background-color: burlywood;
-    text-align: center;
-    margin-top: 5px
 
-}
 
-.item-dos{
-    flex-basis: 250px;
-    color: $color-terapia;
-    
-    display: block;
-    border: 1px solid rgb(184, 182, 182);
 
-    background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(5,7,12, 0.75)) ,url("../image/terapia-1.jpg");
-    
-    
-    @include terapias;
-    
-}
-
-.item-tres {
-    flex-basis: 250px;
-    color: $color-terapia;
-    
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(31, 96, 247, 0), rgba(0, 0, 0, 0.952)) , url("../image/terapia-3.jpg");
-    
-    @include terapias;
-
-    
-}
 
 
  
@@ -116,6 +97,7 @@
 
 .item-cuatro , .item-cinco , .item-seis {
     color: $color-terapia;
+    box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
 }
 
 .terapias-info{
@@ -125,7 +107,7 @@
 
 footer .terapias {
     text-align: center;
-    // background-color: #8b8a8a;
+    
  }
 
  /* container-items*/
@@ -136,55 +118,36 @@ footer .terapias {
 }
 .info-product {
     padding: 15px 30 px;
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(44, 48, 42);
+    }
 }
 
-figure {
-    display: none;
-}
-
-.item img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    transition: all .10s;
-}
-
-
-
-
-
-
-.item-uno img {
-    padding-top: 30px;
-    height: 150px;
-}
-
-.item-dos img {
-    padding-top: 30px;
-    height: 150px;
-    width: 300px;
-}
-
-.item-tres img {
-    padding-top: 30px;
-    height: 150px;
-}
 
 /*estilo hover*/
 .item-uno, .item-dos , .item-tres figure {
     overflow: hidden;
 }
 .item-uno  :hover img {
-    transition: all .5s;
-    transform: scale(1.1);
+   @include hover-terapia ;
 }
 .item-dos  :hover img {
-    transition: all .5s;
-    transform: scale(1.1);
+    @include hover-terapia ;
 }
 .item-tres  :hover img {
-    transition: all .5s;
-    transform: scale(1.1);
+    @include hover-terapia ;
+    
+}
+
+.item-cuatro  :hover img {
+    @include hover-terapia ;
+}
+.item-cinco  :hover img {
+    @include hover-terapia ;
+}
+.item-seis  :hover img {
+    @include hover-terapia ;
 }
 
 .info-product button {
@@ -199,9 +162,11 @@ figure {
 }
 
 .description{
-    color: rgb(212, 221, 221);
-    
+    color: rgb(53, 50, 50);
+    font-size: 18px;
+    text-shadow: rgba(55, 62, 92, 0.288) 1px 0 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    
     
 
 /*Container section-dos */
@@ -228,76 +193,7 @@ figure {
     flex-grow: 3;
 }
 
-/*Tamaño de productos*/
-.item-cuatro{
-     flex-basis: 250px; 
-    
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(163, 189, 250, 0.253), rgba(82, 64, 105, 0.815)) , url("../image/terapia-6.jpg");
-   img{
-    padding-top: 30px;
-    height: 150px;
-   }
-   
-   @include terapias;
 
-}
-
-.item-cinco{
-    flex-basis: 250px; 
-   
-    display: block;
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(163, 189, 250, 0.26), rgb(105, 104, 64)) , url("../image/terapia-7.jpg");
-    background-repeat: repeat;
-    
-    @include terapias;
-    
-
-    
-    
-    img{
-        padding-top: 30px;
-    height: 150px;
-    width: 300px;
-    }
-}
-
-.item-seis {
-    flex-basis: 250px; 
-   
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(77, 80, 83, 0.247), rgb(83, 102, 97)) , url("../image/terapia-9.jpg");
-    img{
-        padding-top: 30px;
-        height: 150px;
-    }
-    
-    @include terapias;
-}
-
-.item-siete {
-    flex-basis: 250px; 
-   
-    border: 1px solid rgb(184, 182, 182);
-    background-image:linear-gradient(rgba(163, 189, 250, 0.082), rgb(64, 105, 95)) , url("../image/terapia-10.jpg");
-    img{
-        padding-top: 30px;
-        height: 150px;
-    }
-    @include terapias;
-    color: #eae6ca;
-    text-align: center;
-    
-}
-
-
-.item img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    transition: all .10s;
-}
 
 
 .item-cuatro,.item-cinco, .item-seis,  h2 {
@@ -312,20 +208,9 @@ figure {
 
 .item-cuatro, .item-cinco , .item-seis, .item-siete figure {
     overflow: hidden;
+    
 }
 
-.item-cuatro  :hover img {
-    @include hover-terapia ;
-}
-.item-cinco  :hover img {
-    @include hover-terapia ;
-}
-.item-seis  :hover img {
-    @include hover-terapia ;
-}
-.item-siete  :hover img {
-    @include hover-terapia ;
-}
 
 .info-product button {
     background-color: rgb(231, 148, 248);

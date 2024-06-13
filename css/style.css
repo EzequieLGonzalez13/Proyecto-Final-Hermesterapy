@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +19,7 @@ body {
 .hermes-main {
   padding-top: 20px;
   text-shadow: 5px 6px rgba(37, 34, 34, 0.219);
+  text-shadow: rgba(253, 220, 5, 0.24) 1px 0 10px;
   font-size: 200%;
 }
 
@@ -42,11 +42,11 @@ header nav ul li a {
   text-decoration: none;
 }
 header img {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 40px;
-  height: 80px;
-  width: 80px;
+  height: 100%;
+  width: 30%;
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -69,7 +69,7 @@ header img {
 }
 
 .navbar-nav .nav-item :hover {
-  color: #3da7ee;
+  color: #c3c540;
 }
 
 .Texto-main div {
@@ -106,7 +106,7 @@ header img {
 .container-uno {
   height: 200px;
   width: 100%;
-  background-color: #eee9c6;
+  background-color: rgba(238, 233, 198, 0.2941176471);
   overflow: hidden;
   box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
 }
@@ -121,7 +121,8 @@ header img {
 .container-dos {
   display: flex;
   gap: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
 }
 .container-dos img {
   margin-top: 10px;
@@ -147,28 +148,19 @@ header img {
   color: #a8a8a8;
 }
 
-.container-textouno {
+.container-textouno, .container-textodos, .container-textotres {
   flex-basis: 250px;
   flex-grow: 1;
 }
 
-.container-textodos {
-  flex-basis: 250px;
-  flex-grow: 1;
-}
-
-.container-textotres {
-  flex-basis: 250px;
-  flex-grow: 1;
-}
-
-.por-que-nosotros {
-  font-size: 25px;
+.por-que-nosotros h2 {
+  font-size: 30px;
   text-align: center;
   height: 100px;
   padding-top: 30px;
-  color: rgb(104, 104, 104);
+  color: rgb(240, 229, 229);
   background-color: #a8a8a8;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*Estilos wpp flotante*/
@@ -201,7 +193,31 @@ footer .index {
   text-align: center;
 }
 
-/* Estilos Terapias*/
+.principal-items {
+  display: flex;
+  border-top: 60px solid #292929;
+  padding-top: 0px;
+  gap: 5px;
+  border: 10px slategrey;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.principal-items img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.principal-item-uno {
+  flex-basis: 250px;
+  color: #222121;
+  border: 1px solid rgb(184, 182, 182);
+  background-image: linear-gradient(rgba(24, 209, 39, 0.75), rgba(5, 7, 12, 0.75)), url("../image/terapia-2.jpg");
+}
+
+.imglogo {
+  filter: invert(66%) sepia(100%) saturate(398%) hue-rotate(1deg) brightness(90%) contrast(92%);
+}
+
 .terapias-header {
   position: sticky;
   top: 0;
@@ -213,7 +229,7 @@ footer .index {
   background-color: rgba(168, 168, 168, 0.937254902);
   color: #eae6ca;
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
   padding-top: 0px;
   margin-top: 30px;
   border-radius: 15px;
@@ -235,15 +251,20 @@ footer .index {
   object-fit: cover;
 }
 
-.item-uno {
-  flex-basis: 250px;
-  color: #f1eaea;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(24, 80, 209, 0.75), rgba(5, 7, 12, 0.75)), url("../image/terapia-2.jpg");
+.item-uno, .item-dos, .item-tres, .item-cuatro, .item-cinco, .item-seis {
+  flex-basis: 300px;
+  color: #222121;
   flex-grow: 1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   object-fit: cover;
+  background-image: linear-gradient(rgba(255, 226, 226, 0.247), rgb(216, 221, 220));
+  border: 1px solid rgb(184, 182, 182);
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+}
+.item-uno img, .item-dos img, .item-tres img, .item-cuatro img, .item-cinco img, .item-seis img {
+  height: 250px;
+  width: 100%;
 }
 
 .description {
@@ -254,56 +275,26 @@ footer .index {
 
 .btn {
   display: block;
-  background-color: rgba(243, 222, 194, 0.452);
+  background-color: rgba(121, 113, 105, 0.452);
   text-align: center;
   margin-top: 5px;
-  border-radius: 50%;
 }
 
-.btn-dos {
+.btn-dos, .btn-tres {
   display: block;
   background-color: burlywood;
   text-align: center;
   margin-top: 5px;
-}
-
-.btn-tres {
-  display: block;
-  background-color: burlywood;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.item-dos {
-  flex-basis: 250px;
-  color: #f1eaea;
-  display: block;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(5, 7, 12, 0.75)), url("../image/terapia-1.jpg");
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
-.item-tres {
-  flex-basis: 250px;
-  color: #f1eaea;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(31, 96, 247, 0), rgba(0, 0, 0, 0.952)), url("../image/terapia-3.jpg");
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
 }
 
 .item-uno, .item-dos, .item-tres, h2 {
-  color: #f1eaea;
+  color: #222121;
   text-align: center;
 }
 
 .item-cuatro, .item-cinco, .item-seis {
-  color: #f1eaea;
+  color: #222121;
+  box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
 }
 
 .terapias-info {
@@ -323,32 +314,9 @@ footer .terapias {
 .info-product {
   padding: 15px 30 px;
 }
-
-figure {
-  display: none;
-}
-
-.item img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  transition: all 0.1s;
-}
-
-.item-uno img {
-  padding-top: 30px;
-  height: 150px;
-}
-
-.item-dos img {
-  padding-top: 30px;
-  height: 150px;
-  width: 300px;
-}
-
-.item-tres img {
-  padding-top: 30px;
-  height: 150px;
+.info-product h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(44, 48, 42);
 }
 
 /*estilo hover*/
@@ -371,6 +339,21 @@ figure {
   transform: scale(1.1);
 }
 
+.item-cuatro :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-cinco :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.item-seis :hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .info-product button {
   background-color: rgb(231, 148, 248);
 }
@@ -380,7 +363,9 @@ figure {
 }
 
 .description {
-  color: rgb(212, 221, 221);
+  color: rgb(53, 50, 50);
+  font-size: 18px;
+  text-shadow: rgba(55, 62, 92, 0.288) 1px 0 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -404,75 +389,6 @@ figure {
   flex-grow: 3;
 }
 
-/*Tamaño de productos*/
-.item-cuatro {
-  flex-basis: 250px;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(163, 189, 250, 0.253), rgba(82, 64, 105, 0.815)), url("../image/terapia-6.jpg");
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-.item-cuatro img {
-  padding-top: 30px;
-  height: 150px;
-}
-
-.item-cinco {
-  flex-basis: 250px;
-  display: block;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(163, 189, 250, 0.26), rgb(105, 104, 64)), url("../image/terapia-7.jpg");
-  background-repeat: repeat;
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-.item-cinco img {
-  padding-top: 30px;
-  height: 150px;
-  width: 300px;
-}
-
-.item-seis {
-  flex-basis: 250px;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(77, 80, 83, 0.247), rgb(83, 102, 97)), url("../image/terapia-9.jpg");
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-.item-seis img {
-  padding-top: 30px;
-  height: 150px;
-}
-
-.item-siete {
-  flex-basis: 250px;
-  border: 1px solid rgb(184, 182, 182);
-  background-image: linear-gradient(rgba(163, 189, 250, 0.082), rgb(64, 105, 95)), url("../image/terapia-10.jpg");
-  flex-grow: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  color: #eae6ca;
-  text-align: center;
-}
-.item-siete img {
-  padding-top: 30px;
-  height: 150px;
-}
-
-.item img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  transition: all 0.1s;
-}
-
 .item-cuatro, .item-cinco, .item-seis, h2 {
   text-align: center;
 }
@@ -486,26 +402,6 @@ figure {
   overflow: hidden;
 }
 
-.item-cuatro :hover img {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
-.item-cinco :hover img {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
-.item-seis :hover img {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
-.item-siete :hover img {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
 .info-product button {
   background-color: rgb(231, 148, 248);
 }
@@ -514,7 +410,6 @@ figure {
   color: rgb(43, 70, 226);
 }
 
-/* Estilos nosotros*/
 .nosotros-header {
   position: sticky;
   top: 0;
@@ -564,6 +459,9 @@ legend {
   padding-top: 30px;
   height: 100%;
   flex-wrap: wrap;
+}
+.section-nosotros-dos iframe {
+  margin-bottom: 20px;
 }
 
 /*Formulario*/
@@ -627,43 +525,6 @@ legend {
   background: #3eba8f;
 }
 
-/*Section*/
-.section-uno-d {
-  margin-left: 80px;
-  margin-right: 0px;
-  flex-basis: 100px;
-}
-.section-uno-d img {
-  display: none;
-  height: 400px;
-  width: 450px;
-  object-fit: cover;
-}
-
-.section-dos-d {
-  margin-right: 0px;
-  margin-left: 80px;
-  display: none;
-  flex-basis: 100px;
-}
-.section-dos-d img {
-  height: 400px;
-  width: 10px;
-  object-fit: cover;
-}
-
-.section-tres-d {
-  margin-left: 0px;
-  margin-right: 5px;
-  flex-basis: 100px;
-}
-.section-tres-d img {
-  display: none;
-  height: 400px;
-  width: 450px;
-  object-fit: cover;
-}
-
 .main-class p {
   font-size: 20px;
   color: #eae6ca;
@@ -703,7 +564,7 @@ legend {
 .redes a, .icon-mas2 {
   display: block;
   text-decoration: none;
-  background: #312f99;
+  background: #222555;
   border-radius: 50px;
   color: #faf8f8;
   height: 40px;
@@ -735,7 +596,6 @@ footer .nosotros {
   text-align: center;
 }
 
-/* Estilos recomendaciones*/
 .recomendaciones-header {
   position: sticky;
   top: 0;
@@ -748,15 +608,7 @@ footer .nosotros {
   grid-template-rows: repeat(8, 25%);
 }
 
-.reco-dos {
-  grid-row: 1/5;
-}
-
-.reco-uno {
-  grid-row: 1/5;
-}
-
-.reco-tres {
+.reco-uno, .reco-dos, .reco-tres {
   grid-row: 1/5;
 }
 
@@ -770,8 +622,96 @@ main div img {
   line-height: 30px;
   text-align: center;
   color: #8b8a8a;
+  width: 70%;
+  margin-left: 15%;
 }
 
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 25%);
+  grid-gap: 50px;
+  margin-top: 90px;
+  height: 50%;
+}
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: rgb(68, 66, 66);
+  font-weight: 700;
+}
+.container-form a i {
+  color: rgba(25, 114, 155, 0.5);
+  margin-right: 10px;
+}
+
+.h-dos-form {
+  color: rgb(68, 66, 66);
+}
+
+.container-form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.container-form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgba(15, 20, 92, 0.685);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+  background: #4c98a5;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-form {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 80px;
+    margin-top: 90px;
+  }
+  .container-form form textarea {
+    min-width: 100%;
+  }
+}
 footer .recomendaciones {
   text-align: center;
 }
@@ -800,63 +740,7 @@ footer .recomendaciones {
   flex-wrap: wrap;
 }
 
-.card-uno {
-  flex-basis: 250px;
-  width: 100%;
-  /* margin: 20px; */
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  transition: all 400ms ease;
-  margin-top: 30px;
-  height: 50%;
-}
-
-.card-dos {
-  flex-basis: 250px;
-  width: 100%;
-  margin: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-tres {
-  flex-basis: 250px;
-  width: 100%;
-  margin: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-cuatro {
-  flex-basis: 250px;
-  width: 100%;
-  margin-top: 25px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-cinco {
+.card-uno, .card-dos, .card-tres, .card-cuatro, .card-cinco, .card-seis, .card-siete, .card-ocho {
   flex-basis: 250px;
   margin: 20px;
   width: 100%;
@@ -869,88 +753,12 @@ footer .recomendaciones {
   margin-top: 30px;
   transition: all 400ms ease;
   height: 50%;
-}
-
-.card-seis {
-  flex-basis: 250px;
-  margin: 20px;
-  width: 100%;
-  margin-top: 25px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-siete {
-  flex-basis: 250px;
-  margin: 20px;
-  width: 100%;
-  margin-top: 25px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-ocho {
-  flex-basis: 250px;
-  margin: 20px;
-  width: 100%;
-  margin-top: 25px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-  cursor: default;
-  margin-top: 30px;
-  transition: all 400ms ease;
-  height: 50%;
-}
-
-.card-uno:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-dos:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-tres:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-cuatro:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-cinco:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-seis:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-siete:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card-ocho:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
 .card-uno img {
   object-fit: cover;
   width: 100%;
+  height: 40%;
   height: 95%;
 }
 
@@ -970,6 +778,7 @@ footer .recomendaciones {
   object-fit: cover;
   width: 100%;
   height: 40%;
+  height: 166px;
 }
 
 .card-cinco img {
@@ -982,6 +791,7 @@ footer .recomendaciones {
   object-fit: cover;
   width: 100%;
   height: 40%;
+  height: 170px;
 }
 
 .card-siete img {
@@ -1121,18 +931,24 @@ footer .recomendaciones {
   margin-bottom: 15px;
 }
 
+.cursos-cont .btn-mas a:hover {
+  background-color: rgba(15, 112, 20, 0.281);
+}
+
+.cursos-cont-dos .btn-mas a:hover {
+  background-color: rgba(15, 112, 20, 0.281);
+}
+
 .card-uno .contenido-uno a {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
-  flex-grow: 1;
-  margin-top: 10%;
 }
 
 .card-dos .contenido-dos a {
@@ -1141,11 +957,10 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
-  flex-grow: 1;
 }
 
 .card-tres .contenido-tres a {
@@ -1154,7 +969,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1166,7 +981,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1178,7 +993,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1190,7 +1005,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1202,7 +1017,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1214,7 +1029,7 @@ footer .recomendaciones {
   padding: 10px;
   margin-top: 10px;
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(116, 114, 250);
+  border: 1px solid rgba(116, 114, 250, 0.425);
   transition: all 400mas ease;
   border-radius: 4px;
   background-color: rgba(14, 96, 190, 0.452);
@@ -1223,7 +1038,9 @@ footer .recomendaciones {
 .banner-cursos {
   width: 100%;
   height: 40vh;
-  background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(84, 122, 218, 0.75)), url("/image/cursos.jpg");
+  background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(84, 122, 218, 0.37)), url("/image/cursos.jpg");
+  padding-left: 70px;
+  padding-right: 70px;
   background-size: 100%;
   background-repeat: no-repeat;
   color: beige;
@@ -1234,9 +1051,28 @@ footer .recomendaciones {
   align-items: center;
   font-weight: 900;
   font-size: 1em;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 
-/*Media Queri deskop*/
+@media only screen and (min-width: 400px) {
+  .main-class p {
+    font-size: 15px;
+    color: #fad60a;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -50%);
+    line-height: 32px;
+  }
+  .social-links i {
+    margin-right: 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .main-class p {
     font-size: 15px;
@@ -1253,6 +1089,16 @@ footer .recomendaciones {
   }
 }
 @media only screen and (max-width: 600px) {
+  .main-class div img {
+    height: 100% px;
+  }
+  .banner-cursos {
+    padding-top: 30px;
+    height: 30vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 15px;
+  }
   .main-class p {
     font-size: 30px;
     color: #fdd90b;
@@ -1283,10 +1129,13 @@ footer .recomendaciones {
   }
   .container-uno h1 {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     font-size: 20px;
   }
-  .main-class {
+  .social-links i {
+    margin-right: 40px;
+  }
+  .main-class div img {
     height: 670px;
   }
 }
@@ -1304,14 +1153,22 @@ footer .recomendaciones {
   }
   .container-uno h1 {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     font-size: 25px;
   }
   .main-class {
     height: 670px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .main-class div img {
+    height: 100%;
+  }
+}
 @media screen and (min-width: 1280px) {
+  .main-class div img {
+    height: 100%;
+  }
   .main-class p {
     font-size: 30px;
     color: #e6e2cc;
@@ -1336,12 +1193,21 @@ footer .recomendaciones {
 }
 /*Media Queri movil*/
 @media screen and (min-width: 768px) {
+  .social-links i {
+    margin-right: 40px;
+  }
   .container-texto {
     flex-direction: row;
     text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
+  .container-uno h1 {
+    color: rgb(104, 104, 104);
+    text-align: center;
+    padding-top: 38px;
+    font-size: 18px;
+  }
   .section-tres-d {
     display: none;
     margin-left: 0px;
@@ -1352,7 +1218,7 @@ footer .recomendaciones {
     width: 450px;
   }
   .main-class p {
-    font-size: 35px;
+    font-size: 30px;
     color: #e6e2cc;
     position: absolute;
     padding-top: 75px;
@@ -1361,17 +1227,20 @@ footer .recomendaciones {
     top: 20%;
     left: 30%;
     right: 30%;
-    transform: translate(-68%, -56%);
-    line-height: 30px;
+    transform: translate(-68%, -45%);
+    line-height: 36px;
   }
   .hermes-main {
     margin-bottom: 25px;
     font-size: 40px;
   }
+  .main-class div img {
+    height: 1100px;
+  }
 }
 @media screen and (max-width: 600px) {
   .main-class p {
-    font-size: 20px;
+    font-size: 35px;
     position: absolute;
     padding-top: 75px;
     margin-top: 100px;
@@ -1379,11 +1248,61 @@ footer .recomendaciones {
     top: 20%;
     left: 30%;
     right: 30%;
-    transform: translate(-68%, -68%);
-    line-height: 20px;
+    transform: translate(-68%, -45%);
+    line-height: 30px;
   }
 }
-/* Estilos recomendaciones*/
+@media only screen and (max-width: 400px) {
+  .main-class p {
+    font-size: 15px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -32%);
+    line-height: 32px;
+  }
+  .main-class div img {
+    height: 1100px;
+  }
+  .social-links i {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .main-class p {
+    font-size: 15px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -32%);
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 472px) {
+  .main-class p {
+    font-size: 24px;
+    color: #e6e2cc;
+    position: absolute;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: translate(-60%, -32%);
+    line-height: 26px;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1398,6 +1317,26 @@ footer .recomendaciones {
 .footer-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.principal {
+  text-align: center;
+}
+
+.cursos {
+  text-align: center;
+}
+
+.recomendaciones {
+  text-align: center;
+}
+
+.terapias {
+  text-align: center;
+}
+
+.nosotros {
+  text-align: center;
 }
 
 .footer-links {
@@ -1427,7 +1366,7 @@ footer .recomendaciones {
 }
 
 .footer-links ul li a:hover {
-  color: rgb(236, 135, 3);
+  color: #c3c540;
   padding-left: 6px;
 }
 

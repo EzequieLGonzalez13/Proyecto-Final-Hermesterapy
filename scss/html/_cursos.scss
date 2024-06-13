@@ -32,250 +32,67 @@
 
 
 
-
-.card-uno{
+.card-uno , .card-dos , .card-tres , .card-cuatro , .card-cinco , .card-seis ,.card-siete , .card-ocho {
     
-    flex-basis: 250px;
-width: 100%;
-/* margin: 20px; */
-border-radius: 6px;
-overflow: hidden;
-background: #fff;
-box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-cursor: default;
-transition: all 400ms ease;
-margin-top: 30px;
-height: 50%;
-
-
-}
-
-.card-dos {
-    flex-basis: 250px;
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-tres {
-    flex-basis: 250px;
-    
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-cuatro {
-    flex-basis: 250px;
-    
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-cinco {
-    flex-basis: 250px;
-    margin: 20px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-seis{
-    flex-basis: 250px;
-    margin: 20px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-siete{
-    flex-basis: 250px;
-    margin: 20px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-ocho{
-    flex-basis: 250px;
-    margin: 20px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-    cursor: default;
-    margin-top: 30px;
-    transition: all 400ms ease;
-    height: 50%;
-}
-
-.card-uno:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(10%);
-
-
-
-
-}
-
-.card-dos:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
+    @include cursos ;
 }
 
 
-.card-tres:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
-
-.card-cuatro:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
-
-.card-cinco:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
-
-
-.card-seis:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
-
-.card-siete:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
-
-.card-ocho:hover {
-
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-// transform: translateY(-3%);
-
-}
 
 
 .card-uno  img {
-     object-fit: cover;
-    width: 100%;
+    @include img ;
     height: 95%;
 
 }
 
+
 .card-dos img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    
 
 
 }
 
 .card-tres img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    
 
 
 }
 
 .card-cuatro img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    height: 166px;
 
 
 }
 
 .card-cinco img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    
 
 
 }
 
 .card-seis img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    height: 170px;
 
 
 }
 
 
 .card-siete img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    
 
 
 }
 
 .card-ocho img {
-    object-fit: cover;
-    width: 100%;
-    height: 40%;
+    @include img ;
+    
 
 
 }
@@ -283,50 +100,48 @@ height: 50%;
 
 
 .card-uno .contenido-uno {
-    padding: 15px;
-    text-align: center;
+   @include contenido-textos ;
 
 }
 
 .card-dos .contenido-dos {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
+
 
 }
 
 .card-tres .contenido-tres {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
+
 
 }
 
-.card-cuatro .contenido-cuatro {
-    padding: 15px;
-    text-align: center;
+.card-cuatro .contenido-cuatro   {
+    @include contenido-textos ;
+
 
 }
 
 .card-cinco .contenido-cinco {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
+
 
 }
 
 .card-seis .contenido-seis {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
 
 }
 
 .card-siete .contenido-siete {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
+
 
 }
 
 .card-ocho .contenido-ocho {
-    padding: 15px;
-    text-align: center;
+    @include contenido-textos ;
+
 
 }
 
@@ -340,11 +155,7 @@ height: 50%;
 
 
 .card-uno .contenido-uno p {
-    font-size: 1em;
-  
-   
-    line-height: 1.5;
-
+   @include contenido-p ;
 
 }
 
@@ -352,216 +163,130 @@ height: 50%;
 
 
 .card-dos .contenido-dos p {
-    font-size: 1em;
-   
-    line-height: 1.5;
-
+    @include contenido-p ;
 
 }
 
 .card-tres .contenido-tres p {
-    font-size: 1em;
-   
-    line-height: 1.5;
+    @include contenido-p ;
 
 
 }
 
 .card-cuatro .contenido-cuatro p {
-    font-size: 1em;
-   
-    line-height: 1.5;
+    @include contenido-p ;
 
 
 }
 
 
 .card-cinco .contenido-cinco p {
-    font-size: 1em;
-   
-    line-height: 1.5;
+    @include contenido-p ;
 
 
 }
 
 .card-seis .contenido-seis p {
-    font-size: 1em;
-   
-    line-height: 1.5;
+    @include contenido-p ;
 
 
 }
 
 
 .card-siete .contenido-siete p {
-    font-size: 1em;
-   
-    line-height: 1.5;
-
+    @include contenido-p ;
 
 }
 
 .card-ocho .contenido-ocho p {
-    font-size: 1em;
-   
-    line-height: 1.5;
-
+    @include contenido-p ;
 
 }
 
 
 
 .card-uno .contenido-uno h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-dos .contenido-dos h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-tres .contenido-tres h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-cuatro .contenido-cuatro h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-cinco .contenido-cinco h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-seis .contenido-seis h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-siete .contenido-siete h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 .card-ocho .contenido-ocho h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include contenido-h3 ;
 }
 
 
 
+.cursos-cont .btn-mas a:hover{
+    background-color: rgba(15, 112, 20, 0.281)
+ }
 
+ .cursos-cont-dos .btn-mas a:hover {
+    background-color: rgba(15, 112, 20, 0.281)
+ }
 
 .card-uno .contenido-uno a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
-    flex-grow: 1;
-    margin-top: 10%;
+   @include contenido-a;
 }
 
 
 .card-dos .contenido-dos a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
-    flex-grow: 1;
+    @include contenido-a;
 }
 
 .card-tres .contenido-tres a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+    @include contenido-a;
 }
 
 .card-cuatro .contenido-cuatro a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+    @include contenido-a;
 }
 
 .card-cinco .contenido-cinco a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+    @include contenido-a;
 }
 
 .card-seis .contenido-seis a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+    @include contenido-a;
 }
 
 .card-siete .contenido-siete a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+   @include contenido-a;
 }
 
 .card-ocho .contenido-ocho a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(116, 114, 250);
-    transition: all 400mas ease;
-    border-radius: 4px;
-    background-color: rgba(14, 96, 190, 0.452);
+    @include contenido-a;
 }
 
 
 .banner-cursos {
     width: 100%;
     height: 40vh;
-    background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(84, 122, 218, 0.75)) , url("/image/cursos.jpg");
-    
-    
+    background-image: linear-gradient(rgba(78, 80, 85, 0.75), rgba(84, 122, 218, 0.37)) , url("/image/cursos.jpg");
+    padding-left: 70px;
+    padding-right: 70px;
     background-size:100%;
     background-repeat: no-repeat;
     color: beige;
@@ -572,6 +297,8 @@ height: 50%;
     align-items: center;
     font-weight: 900;
     font-size: 1em;
+    border-radius: 30px;
+    margin-bottom: 20px;
     
 }
 

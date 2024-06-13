@@ -11,6 +11,8 @@
     
 }
 
+
+
 .footer-row{
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +21,29 @@
 
 
 
+
+
+.principal {
+    text-align:center;
+    
+}
+
+.cursos {
+    text-align:center;
+}
+
+.recomendaciones {
+    text-align:center;
+
+}
+
+.terapias {
+    text-align: center;
+}
+
+.nosotros{
+    text-align: center;
+}
 
 .footer-links {
     width: 25%;
@@ -48,7 +73,7 @@
 }
 
 .footer-links ul li a:hover {
-    color:rgb(236, 135, 3);
+    color:#c3c540;
     padding-left: 6px;
     
 }

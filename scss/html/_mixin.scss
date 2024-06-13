@@ -1,3 +1,61 @@
+
+@mixin img {
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+}
+
+@mixin contenido-a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(116, 114, 250, 0.425);
+    transition: all 400mas ease;
+    border-radius: 4px;
+    background-color: rgba(14, 96, 190, 0.452);
+
+}
+
+@mixin contenido-h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+@mixin contenido-p {
+    font-size: 1em;
+  
+   
+    line-height: 1.5;
+
+}
+
+
+@mixin contenido-textos {
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+
+@mixin cursos {
+    flex-basis: 250px;
+    margin: 20px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    cursor: default;
+    margin-top: 30px;
+    transition: all 400ms ease;
+    height: 50%;
+}
+
 @mixin terapias {
     
     flex-grow: 1;
@@ -7,6 +65,12 @@
 
     background-repeat: no-repeat;
     object-fit: cover;
+
+    background-image:linear-gradient(rgba(255, 226, 226, 0.247), rgb(216, 221, 220)) ;
+    border: 1px solid rgb(184, 182, 182);
+   
+   
+    box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
    
 
 }

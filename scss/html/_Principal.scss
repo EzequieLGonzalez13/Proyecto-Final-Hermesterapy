@@ -8,6 +8,7 @@
 .hermes-main{
     padding-top: 20px;
     text-shadow: 5px 6px rgba(37, 34, 34, 0.219);
+    text-shadow: rgba(253, 220, 5, 0.24) 1px 0 10px;
 
     font-size: 200%;
 }
@@ -21,6 +22,8 @@ header{
     position: sticky;
     top: 0;
     box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
+
+
     
 
     
@@ -40,12 +43,13 @@ header{
         }
     }
 img {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     margin-left: 40px;
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 30%;
     border-radius: 20px 20px 20px 20px ;
+   
     
 }
 
@@ -72,14 +76,15 @@ img {
 .nav-link {
     color: #eae6ca;
    font-family: Georgia, 'Times New Roman', Times, serif;
-//    box-shadow: 10px 5px 5px rgba(39, 39, 39, 0.836);
+
    border-radius: 30px;
-//    background-color: #2e399765;
+
    
 }
 
 .navbar-nav .nav-item :hover {
-    color: #3da7ee;
+    color: #c3c540;
+    
     
 }
 
@@ -128,7 +133,7 @@ text-align: center;
 .container-uno {
     height:200px;
     width: 100%;
-    background-color: #eee9c6;
+    background-color: #eee9c64b;
     overflow: hidden;
     h1 {
         color: rgb(104, 104, 104);
@@ -144,7 +149,8 @@ text-align: center;
 .container-dos {
     display: flex;
     gap: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 5px 5px rgba(39, 39, 39, 0.555);
           img {
 
             margin-top: 10px;
@@ -177,34 +183,25 @@ text-align: center;
 
 }
 
-.container-textouno {
+.container-textouno , .container-textodos , .container-textotres  {
     flex-basis: 250px;
     flex-grow: 1;
 
 }
 
-.container-textodos {
-    flex-basis: 250px;
-    flex-grow: 1;
-}
 
-.container-textotres {
-    flex-basis: 250px;
-    flex-grow: 1;
-}
-
-.por-que-nosotros{
-    font-size: 25px;
+.por-que-nosotros h2{
+    font-size: 30px;
     text-align: center;
     height: 100px;
     padding-top: 30px;
-    color: rgb(104, 104, 104);
+    color: rgb(240, 229, 229);
     background-color: #a8a8a8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
-//  .footer {
-//         text-align: center;
-//     }
+
 
     
 /*Estilos wpp flotante*/
@@ -243,4 +240,38 @@ footer .index {
    text-align: center;
  
    
+}
+
+.principal-items {
+    display: flex;
+    
+    border-top:60px solid #292929;
+    padding-top: 0px;
+    gap: 5px;
+    border: 10px slategrey;
+    align-content: flex-start;
+    
+    flex-wrap: wrap;
+    img {
+        max-width: 100%;
+    object-fit: cover;
+    }
+    
+}
+
+.principal-item-uno { flex-basis: 250px;
+    color: $color-terapia;
+    
+    border: 1px solid rgb(184, 182, 182);
+    background-image:linear-gradient(rgba(24, 209, 39, 0.75), rgba(5,7,12, 0.75)) , url("../image/terapia-2.jpg");
+   
+    
+   
+
+}
+
+.imglogo {
+    
+    
+    filter: invert(66%) sepia(100%) saturate(398%) hue-rotate(1deg) brightness(90%) contrast(92%);
 }
